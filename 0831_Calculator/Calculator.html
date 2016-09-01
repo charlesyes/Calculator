@@ -7,14 +7,12 @@
     <script src="Scripts/jquery-2.2.4.min.js"></script>
 
     <style>
-        .NumBtn, .CalcuBtn {
+        .NumBtn, .CalcuBtn , .CalcuOperation {
             width:30px;
             height:30px;
         }
 
-        #0 {
-            width:70px;
-        }
+
 
     </style>
 
@@ -25,8 +23,8 @@
         <!--<table>
             <tr>
                 <td>-->
-                    <input type="text" id="txtDisplay" />
-                    <input type="text" id="hideOperation" />
+                    <input type="text" id="txtDisplay" />txtDisplay
+                    <input type="text" id="hideOperation" />hideOperation
                 <!--</td>
             </tr>
         </table>-->
@@ -36,29 +34,28 @@
                 <td><input type="button" value="7" class="NumBtn" id="7"/></td>
                 <td><input type="button" value="8" class="NumBtn" id="8"/></td>
                 <td><input type="button" value="9" class="NumBtn" id="9"/></td>
-                <td><input type="button" value="/" class="CalcuBtn" id="NDivide"/></td>
-                <td><input type="button" value="C" class="CalcuBtn" id="NClean"/></td>
+                <td><input type="button" value="/" onclick="CalcuOpera('/')" class="CalcuOperation" id="NDivide"/></td>
+                <td><input type="button" value="C" onclick="Clean()" class="CalcuBtn" id="NClean"/></td>
             </tr>                                          
             <tr>                                           
                 <td><input type="button" value="4" class="NumBtn" id="4"/></td>
                 <td><input type="button" value="5" class="NumBtn" id="5"/></td>
                 <td><input type="button" value="6" class="NumBtn" id="6"/></td>
-                <td><input type="button" value="*" class="CalcuBtn" id="NMulti"/></td>
+                <td><input type="button" value="*" onclick="CalcuOpera('*')" class="CalcuOperation" id="NMulti"/></td>
                 <td></td>                                          
             </tr>                                         
             <tr>                                          
                 <td><input type="button" value="1" class="NumBtn" id="1"/></td>
                 <td><input type="button" value="2" class="NumBtn" id="2"/></td>
                 <td><input type="button" value="3" class="NumBtn" id="3"/></td>
-                <td><input type="button" value="-" class="CalcuBtn" id="NMinus"/></td>
-                <td><input type="button" value="=" class="CalcuBtn" id="NEquals"/></td>
+                <td><input type="button" value="-" onclick="CalcuOpera('-')" class="CalcuOperation" id="NMinus"/></td>
+                <td><input type="button" value="=" onclick="CalcuEq()" class="CalcuEqual" id="NEquals"/></td>
             </tr>                                               
             <tr>                                                
                 <td><input type="button" value="0" class="NumBtn" id="0"/></td>
                 <td></td>
                 <td><input type="button" value="." class="NumBtn" id="NDecimal"/></td>
-                <td><input type="button" value="+" class="CalcuBtn" id="NPlus"/></td>
-                
+                <td><input type="button" value="+" onclick="CalcuOpera('+')" class="CalcuOperation" id="NPlus"/></td>   
             </tr>                        
             
         </table>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CalculatorJQ</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    
+    <style>
+        .NumBtn, .CalcuBtn, .CalcuOperation {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="CalcuBody">
+        <!--顯示視窗-->
+        <!--<table>
+            <tr>
+                <td>-->
+        <input type="text" id="txtDisplay" />txtDisplay
+        <input type="text" id="hideOperation" />hideOperation
+        <!--</td>
+            </tr>
+        </table>-->
+        <!--按鈕 運算按鈕-->
+        <table>
+            <tr>
+                <td><input type="button" value="7" class="NumBtn" id="7" /></td>
+                <td><input type="button" value="8" class="NumBtn" id="8" /></td>
+                <td><input type="button" value="9" class="NumBtn" id="9" /></td>
+                <td><input type="button" value="/" class="CalcuOperation" id="NDivide" /></td>
+                <td><input type="button" value="C" class="CalcuBtn" id="NClean" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="NumBtn" id="4" /></td>
+                <td><input type="button" value="5" class="NumBtn" id="5" /></td>
+                <td><input type="button" value="6" class="NumBtn" id="6" /></td>
+                <td><input type="button" value="*" class="CalcuOperation" id="NMulti" /></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="NumBtn" id="1" /></td>
+                <td><input type="button" value="2" class="NumBtn" id="2" /></td>
+                <td><input type="button" value="3" class="NumBtn" id="3" /></td>
+                <td><input type="button" value="-" class="CalcuOperation" id="NMinus" /></td>
+                <td><input type="button" value="=" class="CalcuEqual" id="NEquals" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" class="NumBtn" id="0" /></td>
+                <td></td>
+                <td><input type="button" value="." class="NumBtn" id="NDecimal" /></td>
+                <td><input type="button" value="+" class="CalcuOperation" id="NPlus" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+<script src="MyScript/CalculajQuery.js"></script>
